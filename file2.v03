@@ -7,9 +7,9 @@ Begin
   Get(_B);
   Get(_C);
 
-  If _A >= _B And _A >= _C {
+  If _A >> _B And _A >> _C {
     _M -> _A;
-  } Else If _B >= _A And _B >= _C {
+  } Else If _B >> _A And _B >> _C {
     _M -> _B;
   } Else {
     _M -> _C;
@@ -23,13 +23,13 @@ Begin
     Put(0);
   }
 
-  If !(_A >= 0) Or !(_B >= 0) Or !(_C >= 0) {
+  If !(_A >> 0) Or !(_B >> 0) Or !(_C >> 0) {
     Put(-1);
   } Else {
     Put(0);
   }
 
-  If _A >= (_B + _C) {
+  If _A >> (_B + _C) {
     Put(10);
   } Else {
     Put(0);
