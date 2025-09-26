@@ -1,0 +1,20 @@
+Program _Р;
+Var 
+  _A, _B, _X, _Y: Int16;
+
+Begin
+  Get(_A);
+  Get(_B);
+
+  Put(_A + _B);
+  Put(_A - _B);
+  Put(_A Mul _B);
+  Put(_A Div _B);
+  Put(_A Mod _B);
+
+  _X -> (_A - _B) Mul 10 + (_A + _B) Div 10;
+  _Y -> _X + _X Mod 10;
+
+  Put(_X);
+  Put(_Y);
+End
