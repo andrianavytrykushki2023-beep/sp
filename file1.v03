@@ -12,8 +12,8 @@ Begin
   Put(_A Div _B);
   Put(_A Mod _B);
 
-  _X -> (_A - _B) Mul 10 + (_A + _B) Div 10;
-  _Y -> _X + _X Mod 10;
+   (_A - _B) Mul 10 + (_A + _B) Div 10 ->_X;
+  _X + _X Mod 10  ->_Y;
 
   Put(_X);
   Put(_Y);
