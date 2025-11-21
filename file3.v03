@@ -1,0 +1,16 @@
+Program _P;
+Var Int16 _A, _B, _I, _J, _X;
+Begin
+  Get(_A);
+  Get(_B);
+  For _A -> _I To _B Do {
+    Put(_I Mul _I);
+  }
+  0 -> _X;
+  For 1 -> _I To _A Do {
+    For 1 -> _J To _B Do {
+      _X + 1 -> _X;
+    }
+  }
+  Put(_X);
+End
